@@ -1,4 +1,60 @@
 
+#List of functions 
+#         create_sound(sound)
+#     A function gets an empty list and manages the entire audio creation thread. It checks that an instruction file
+#     exists and if so, runs the write_sound function we described earlier. Function returns the list of new audio lists
+#     and start input value, to automatically enter the file change menu
+# 
+# 
+#        read_instructions(file_name):
+#     A function that receives an instruction file, adjusts it so that we can absorb the values of a character and
+#     the amount of sampling by inserting them into list. Function returns list
+# 
+# 
+#         create_data_list(sound_command_list):
+#     This function runs the instruction file and creates an audio list
+# 
+# 
+#         compose_sound(file_name):
+#     This function operates the process of creating an audio
+# 
+# 
+#         create_sound(sound):
+#     A function gets an empty list and manages the entire audio creation process. It checks that an instruction file
+#     exists and if so, runs the write_sound function we described earlier. Function returns the list of new audio lists
+#     and start input value, to automatically enter the file change menu
+# 
+# 
+#         sample(i, freq)
+#     This function gets the number of the sample value and frequency that uses the formula
+#     given in the exercise by calculating the appropriate sample value.
+# 
+# 
+#         edit_sound(sound, sample_rate)
+#     A function that manages the process of modifying a existing file. if the sound list is an empty one, meaning it
+#     wasn't modified from the creation in the "main" function, we will conclude that user wants to modify an existing
+#     file. Else, we suppose that the user want to process changes on the file that was created inside the program.
+#     We will ask If the user wants to modify the file and we call the "apply changes" function.
+#     The while loop is responsible for the validity of the user's input.
+#     Invalid input will trigger the loop to start over again.  If the user wants to go to finish the process it
+#     moves him to the end menu (to save the file and exit the program).
+#         apply_changes(edit_input, sound)
+#     A function that performs the change on the audio according to the user's choice and prints a message about the
+#     success of the execution
+#         end_menu(sample_rate, sound)
+#     A function that receives the audio after making all the changes and the sample value and uses the "save_wave" utility
+#     function to save the audio as a file on the computer.
+# 
+# 
+# There are certain minor functions that help to the bigger ones to do their purpose.
+# 
+# 
+#         check_sound_request_validity(file_name):
+#     Checks the existence of the file with the instructions.
+# 
+
+
+
 
 from math import sin, pi
 
